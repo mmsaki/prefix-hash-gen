@@ -1,0 +1,11 @@
+[project]
+name = "prefix-hash-gen"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "eth-rlp>=2.2.0",
+    "eth-utils>=5.3.1",
+    "eth-hash[pycryptodome]",
+]
