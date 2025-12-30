@@ -85,7 +85,7 @@ def find(base: TX, prefix: str = "cafe"):
         # encoded = rlp.encode(list(tx.values()))
         (_, _, _, encoded) = sign_transaction_dict(base.account._key_obj, tx)
         tx_hash = keccak(encoded).hex()
-        print(i)
+        # print(i)
 
         if tx_hash.startswith(prefix):
             signed = Account.sign_transaction(tx, base.key)
